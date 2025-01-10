@@ -1,0 +1,212 @@
+.dark-mode-bg {
+    background-color: #080404 !important; 
+}
+
+.light-mode-bg {
+    background-color: #f6f3f3 !important; 
+}
+
+.max-h-200 {
+    max-height: 400px;
+    width: 100%;
+}
+  
+.swiper-container {
+width: 100%; 
+overflow: hidden;
+}
+
+.swiper-wrapper {
+display: flex; 
+}
+
+.swiper-slide {
+flex: 1 0 21%;
+margin: 0 5px; 
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.active {
+    border-bottom: 2px solid #f6f3f3;
+}
+
+/* Base styles */
+.nav-list-mobile {
+    background-color: #011725; /* Match the header background */
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1; /* Ensure it appears above other content */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  /* For mobile styles */
+  @media (max-width: 600px) {
+    .nav-list {
+      display: none; /* Hide desktop menu items */
+    }
+    
+    .nav-buttons {
+      display: none; /* Hide desktop buttons */
+    }
+  
+    .nav-list-mobile {
+      display: flex; /* Show mobile menu items */
+    }
+  
+    .nav-buttons-mobile {
+      display: flex; /* Show mobile buttons */
+      justify-content: center; /* Center the buttons */
+    }
+  
+    .nav-list-mobile a {
+      text-decoration: none; /* Remove underline */
+      color: white; /* Ensure text is white */
+      padding: 10px 15px; /* Add padding for touch-friendly areas */
+      transition: background-color 0.3s; /* Smooth transition */
+      text-align: center; /* Center the text */
+    }
+  
+    .nav-list-mobile a:hover {
+      background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    }
+    
+    #welcome {
+      font-size: 1rem; /* Smaller heading */
+      margin-bottom: 40px; /* Increase gap between #welcome and other elements */
+      text-align: center; /* Center the text */
+    }
+    
+    #description {
+      font-size: 1.25rem; /* Reduce paragraph size */
+      display: none; /* Hidden on smaller screens */
+    }
+    
+    #coverp2 {
+      font-size: 1.5rem; /* Smaller subheading */
+      margin-top: 60px; /* More space between #welcome and #coverp2 */
+    }
+    
+    .cis {
+      font-size: 1rem; /* Smaller heading */
+      display: none; /* Hidden on smaller screens */
+      margin-top: 60px; /* More space between this element and the above content */
+    }
+    
+    /* Add more padding to the section */
+    section.relative.mt-8 {
+      padding: 20px; /* Slightly larger padding for more room */
+    }
+
+    /* Add more padding to the section */
+    #home_about_cth1 {
+      font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+  
+    #home_about_ctp1 {
+      font-size: 0.7rem; /* Smaller link size for mobile */
+    }
+  
+    #home_about_us_h2 {
+      font-size: 1.5rem; /* Smaller subheading for mobile */
+    }
+  
+    #home_about_us_p {
+      font-size: 0.9rem; /* Smaller paragraph for mobile */
+    }
+
+    .about_us_image {
+      padding: 20px 0;
+    }
+
+    section.home_about_us{
+      padding: 20px ; /* Add padding to the section */
+    }
+
+    #home_products_cth1{
+      font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    #home_products_ctp1{
+      font-size: 0.7rem; /* Smaller link size for mobile */
+    }
+
+    section.home_our_products{
+      padding: 0px 20px; /* Add padding to the section */
+    }
+
+    #home_solutions_cth1{
+      font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .swiper-slide {
+      width: 150px; /* Set a fixed width */
+    }
+    
+    .swiper-slide .bg-white {
+      padding: 4px; /* Adjust padding */
+    }
+    
+    .swiper-slide img {
+      width: 30px; /* Adjust image size */
+      height: 40px; /* Adjust image size */
+    }
+    
+
+    section.home_carousel{
+      padding: 0px 20px; /* Add padding to the section */
+    }
+
+    .contact_getin_touch {
+      margin-top: 6.5rem;
+    }
+
+   #about_we_are_h1,
+   #about_mission_h2,
+   #about_vision_h2,
+   #about_why_us_h2{
+    font-size: 1.5rem;
+   }
+
+   #about_we_are_p,
+   #about_mission_p,
+   #about_vision_p {
+    font-size: 0.9rem;
+   }   
+
+ 
+  }
+    
+/* For larger
+
+ 
+  }
+  
+  /* For larger screens */
+  @media (min-width: 601px) {
+    .nav-list {
+      display: flex; /* Show desktop menu items */
+    }
+    
+    .nav-buttons {
+      display: flex; /* Show desktop buttons */
+    }
+  
+    .nav-list-mobile {
+      display: none; /* Hide mobile menu items */
+    }
+  
+    .nav-buttons-mobile {
+      display: none; /* Hide mobile buttons */
+    }
+  }
+  
+
+  
+  
+  
+  
