@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH67F0W8KZ"></script>
+    <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+       gtag('config', 'G-TH67F0W8KZ');
+    </script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to our website! We offer exceptional services and products tailored to meet your needs, like software development, network solutions, cloud, cctv. Contact us to learn more or browse our offerings today!">
+      <meta name="keywords" content="software development, network solutions, cloud services, CCTV, IT services, IntegrIT, technology solutions, small and medium businesses">
+      <meta property="og:title" content="IntegrIT - Exceptional IT Solutions">
+      <meta property="og:description" content="Discover our services in software development, cloud solutions, network engineering, and more.">
+      <meta property="og:image" content="URL_to_your_image">
+      <meta property="og:url" content="https://www.integrit.ge">
+      <meta property="og:type" content="website">
+      <link href="/css/output.css" rel="stylesheet">
+      <link href="/css/customStyles.css"
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <title>IntegrIT</title>
+      <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+      <script type="module" src="app.js"></script>
+    </head>
+
+  <body class="font-sans bg-gray-200 dark:bg-[#080404] dark-mode-bg  dark:text-white font-sans transition-colors duration-300 ">
+
+    <header class="fixed top-0 left-0 w-full z-10 bg-[#011725] dark:bg-[#011725] text-white p-4">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="/" class="text-2xl font-bold">
+          <img src="./imeges/logo-black-removebg.png" alt="Company Logo" class="h-18">
+        </a>
+        <div class="flex items-center">
+          <button id="menu-toggle" class="md:hidden p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          <div class="nav-list hidden md:flex space-x-4">
+            <a href="/" id="menu0" class="px-4 py-2 rounded hover:bg-gray-700">Home</a>
+            <a href="/services.html" id="menu1" class="px-4 py-2 rounded hover:bg-gray-700">Services</a>
+            <a href="/about.html" id="menu2" class="px-4 py-2 rounded hover:bg-gray-700">About</a>
+            <a href="/contact.html" id="menu3" class="px-4 py-2 rounded hover:bg-gray-700">Contact</a>
+          </div>
+          <div class="nav-buttons hidden md:flex space-x-4">
+            <button id="lang-toggle" class="px-4 py-2 rounded-full transition duration-300 bg-gray-300 dark:bg-gray-700 text-black dark:text-white shadow-lg hover:shadow-2xl hover:bg-gray-400 dark:hover:bg-gray-600">En</button>
+            <button id="theme-toggle" class="px-4 py-2 rounded-full transition duration-300 bg-gray-300 dark:bg-gray-700 text-black dark:text-white shadow-lg hover:shadow-2xl hover:bg-gray-400 dark:hover:bg-gray-600">Dark</button>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-list-mobile hidden md:hidden">
+        <a href="/" id="menu0" class="block px-4 py-2 text-center hover:bg-gray-700">Home</a>
+        <a href="/services.html" id="menu1" class="block px-4 py-2 text-center hover:bg-gray-700">Services</a>
+        <a href="/about.html" id="menu2" class="block px-4 py-2 text-center hover:bg-gray-700">About</a>
+        <a href="/contact.html" id="menu3" class="block px-4 py-2 text-center hover:bg-gray-700">Contact</a>
+        <div class="nav-buttons-mobile flex justify-center mt-4">
+          <button id="lang-toggle-mobile" class="px-4 py-2 rounded-full transition duration-300 bg-gray-300 dark:bg-gray-700 text-black dark:text-white shadow-lg hover:shadow-2xl hover:bg-gray-400 dark:hover:bg-gray-600 mx-2">En</button>
+          <button id="theme-toggle-mobile" class="px-4 py-2 rounded-full transition duration-300 bg-gray-300 dark:bg-gray-700 text-black dark:text-white shadow-lg hover:shadow-2xl hover:bg-gray-400 dark:hover:bg-gray-600 mx-2">Dark</button>
+        </div>
+      </div>
+    </header>
+
+  <main class="min-h-screen flex items-center justify-center">
+    
+    <div class="max-w-4xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 contact_getin_touch">
+      <!-- Left Side Text Section -->
+      <div class="p-8 bg-white dark:bg-[#011725] rounded-lg shadow-lg text-gray-800 dark:text-white">
+        <h2 id="contact_touch_h2" class="text-2xl font-bold mb-4"></h2>
+        <p id="contact_touch_p" class="mb-4"></p>
+      </div>
+  
+      <!-- Contact Form Section -->
+      <div class="max-w-lg w-full mx-auto p-8 bg-white dark:bg-[#011725] rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-gray-800 dark:text-white text-center">Contact Us</h2>
+        <form>
+          <div class="grid grid-cols-1 gap-6">
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label for="firstName" class="block text-gray-700 dark:text-gray-300">First Name <span class="text-red-500">*</span></label>
+                <input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" placeholder="John">
+              </div>
+              <div>
+                <label for="lastName" class="block text-gray-700 dark:text-gray-300">Last Name</label>
+                <input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" placeholder="Doe">
+              </div>
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700 dark:text-gray-300">Phone <span class="text-red-500">*</span></label>
+              <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" placeholder="(123) 456-7890">
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 dark:text-gray-300">Email <span class="text-red-500">*</span></label>
+              <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white" placeholder="you@example.com">
+            </div>
+            <div>
+              <label for="text" class="block text-gray-700 dark:text-gray-300">Message <span class="text-red-500">*</span></label>
+              <textarea id="text" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-white h-32" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="w-full bg-gray-700 text-white mt-6 px-4 py-2 rounded-md hover:bg-gray-500 transition duration-300">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  
+
+ <!-- from here starts footer -->
+ <footer class="bg-[#011725] dark:bg-[#011725] text-[#cccccc] mt-20 p-8">
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <ul class="flex space-x-8 mb-4 md:mb-0"> <!-- Added margin-bottom for small screens -->
+      <li><a href="/services.html" class="hover:text-gray-300 transition duration-300">Services</a></li>
+      <li><a href="/about.html" class="hover:text-gray-300 transition duration-300">About Us</a></li>
+      <li><a href="/contact.html" class="hover:text-gray-300 transition duration-300">Contact</a></li>
+    </ul>
+    <div class="flex space-x-2">
+      <a href="#" aria-label="Facebook" onclick="alert('Feature is coming soon!')">
+        <img src="./imeges/facebook.png" alt="Facebook" class="w-6 h-6"> 
+      </a>
+      <a href="#" aria-label="LinkedIn" onclick="alert('Feature is coming soon!')">
+        <img src="./imeges/linkedin.png" alt="LinkedIn" class="w-6 h-6"> 
+      </a>
+      <a href="#" aria-label="YouTube" onclick="alert('Feature is coming soon!')">
+        <img src="./imeges/youtube.png" alt="YouTube" class="w-6 h-6"> 
+      </a>
+    </div>
+  </div>
+  <p class="text-lg text-center mt-4 footer_rights text-xs">&copy; 2024 IntegrIT. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+<script>
+  document.querySelector('form').addEventListener('submit', async (e) => {
+    e.preventDefault(); 
+
+    const formData = {
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('text').value,
+    };
+
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      if(result.error) alert('Error sending message:');
+      if(result.message) alert(result.message);
+      document.querySelector('form').reset();
+    } catch (error) {
+      alert('Error sending message:' );
+    }
+  });
+</script>

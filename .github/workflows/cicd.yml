@@ -1,0 +1,30 @@
+name: Deploy Angular Application
+
+on:
+  push: 
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Login to docker hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}       
+      - name: Build docker image
+        run: docker build -t revazikukhianidze/integrit-frontend .
+      - name: Publish image to docker hub
+        run: docker push revazikukhianidze/integrit-frontend:latest
+        
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull revazikukhianidze/integrit-frontend:latest
+      - name: Delete old container
+        run: docker rm -f integrit-frontend-conteiner
+      - name: Run docker container
+        run: docker run -d -p 8080:80 --name integrit-frontend-conteiner revazikukhianidze/integrit-frontend

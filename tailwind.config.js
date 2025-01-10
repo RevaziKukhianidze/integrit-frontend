@@ -1,0 +1,18 @@
+module.exports = {
+  darkMode: 'class', 
+ 
+    content: [
+      './**/*.html',    
+      './**/*.js',      
+    ],
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Roboto', 'sans-serif'], 
+        },
+      },
+    },
+    plugins: [],
+  }
+  
+
