@@ -152,7 +152,7 @@
     };
 
     try {
-      const response = await fetch('http://nodejs-backend-container:3001/api', {
+      const response = await fetch('http://18.156.7.71:3001/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -161,11 +161,9 @@
       });
       const result = await response.json();
       if(result.error) alert('Error sending message:');
-      console.log('ar igzavneba, ratom?: ', error);
       if(result.message) alert(result.message);
       document.querySelector('form').reset();
     } catch (error) {
-      console.log('catch error: ', error);
       alert('Error sending message:' );
     }
   });
